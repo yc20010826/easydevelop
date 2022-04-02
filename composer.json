@@ -1,6 +1,6 @@
 {
     "name": "yangcheng0826/easydevelop",
-    "description": "Easy to develop class",
+    "description": "YangChengEasyClass | easydevelop （容易开发的类），这套类库封装了常用的一些方法及类库，例如微信公众号、小程序等",
     "type": "library",
     "keywords": ["PHP", "Wechat", "Excel", "xlsx", "xls", "ods", "gnumeric", "spreadsheet"],
     "license": "MIT",
