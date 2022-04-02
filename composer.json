@@ -1,0 +1,23 @@
+{
+    "name": "yangcheng/easydevelop",
+    "description": "Easy to develop class",
+    "type": "library",
+    "keywords": ["PHP", "Wechat", "Excel", "xlsx", "xls", "ods", "gnumeric", "spreadsheet"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "杨成",
+            "email": "1991361342@qq.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.0",
+        "composer-plugin-api": "^1.0 || ^2.0",
+        "phpoffice/phpspreadsheet": ">=1.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "YangChengEasyComposer\\": "src/"
+        }
+    }
+}
