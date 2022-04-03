@@ -18,7 +18,6 @@ class Base extends \think\Controller
         parent::__construct($request);
     }
 
-
     /**
      * 发起一个请求
      * @param $url

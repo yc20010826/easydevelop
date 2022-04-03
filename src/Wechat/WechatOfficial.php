@@ -3,9 +3,9 @@
 
 namespace YangChengEasyComposer\Wechat;
 
-use think\Cache;
-use think\Log;
 use think\Request;
+use think\facade\Cache;
+use think\facade\Log;
 use YangChengEasyComposer\Base;
 
 /**
