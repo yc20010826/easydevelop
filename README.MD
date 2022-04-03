@@ -16,13 +16,12 @@
 
 ## 已实现类
 
-1、`Office` （Office操作合集）
+### 1、`Office` （Office操作合集）
 
 功能：常用语excel表格导入到数据库时使用，集成两个方法：导入出数据、数据转关联数组
 
-2、`Utils` （各类工具合集）
+### 2、`Utils` （各类工具合集）
 
-功能：
 
     Arrays.php（数组工具类）：
         1. 数组两端空格清理
@@ -37,9 +36,7 @@
         1. 发起一个http请求（数组返回）
         2. 发起一个http请求（原样返回）
 
-3、`Wechat` （微信开发合集）
-
-功能：
+### 3、`Wechat` （微信开发合集）
 
     WechatOfficial.php（公众号开发类）：
         1. 获取token
@@ -54,14 +51,24 @@
         5. 用户关注事件监听（用于监听，需要自己实现）
         6. 使用code换取网页授权信息
 
+    WechatPay.php（微信支付工具类）（基于yansongdaPay进行封装）：
+        1. 微信公众号支付
+
 
 ## 相关依赖
 
-##Office：
+## Office
 
-### `PhpSpreadsheet`
+### `PhpSpreadsheet` >= V1.x版本
     安装方式：composer require phpoffice/phpspreadsheet
     运行条件：PHP5.6或更高版本，推荐PHP7+ 支持php_zip扩展、 php_xml扩展、php_gd2扩展
+
+## Wechat
+
+### `yansongda/pay` = V2.x版本
+    安装方式：composer require yansongda/pay:^2.10 -vvv
+    运行条件：PHP 7.0+ (v2.8.0 开始 >= 7.1.3)
+
 
 ## 开发者
 
