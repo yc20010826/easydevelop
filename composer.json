@@ -16,7 +16,8 @@
         "vendor/package2": "1.*",
         "vendor/package3": "^2.0.3",
         "composer-plugin-api": "^1.0 || ^2.0",
-        "phpoffice/phpspreadsheet": ">=1.0"
+        "phpoffice/phpspreadsheet": ">=1.0",
+        "yansongda/pay": "^2.10"
     },
     "autoload": {
         "psr-4": {
