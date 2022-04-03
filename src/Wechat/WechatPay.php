@@ -70,4 +70,12 @@ class WechatPay extends Base
         return $result;
     }
 
+    /**
+     * 示例异步回调时候
+     */
+    public function notify_url(){
+        $result = Pay::wechat($this->config)->verify();
+        // 返回 Collection 类型，可以通过 $result->xxx 得到服务器返回的数据。
+    }
+
 }
