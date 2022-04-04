@@ -4,7 +4,7 @@
 
 ## 安装方式
 
-###`composer require yangcheng0826/easydevelop`
+`composer require yangcheng0826/easydevelop`
 
 ## 使用说明
 
@@ -38,12 +38,12 @@
 
 ### 3、`Wechat` （微信开发合集）
 
-    WechatOfficial.php（公众号开发类）：
+    WehatMini.php（小程序开发类）：
         1. 获取token
         2. code换取用户信息（小程序登录）
         3. 对微信加密数据进行解密（用于手机号解析等）
 
-    WehatMini.php（小程序开发类）：
+    WechatOfficial.php（公众号开发类）：
         1. 获取公众号token
         2. 获取js调用凭证
         3. 获取微信JS调用加密字符串
@@ -53,7 +53,16 @@
 
     WechatPay.php（微信支付工具类）（基于yansongdaPay进行封装）：
         1. 微信公众号支付
-
+        2. 微信小程序支付
+        3. 微信H5支付（非微信环境内|普通手机浏览器支付）
+        4. 微信APP支付
+        5. 微信主扫二维码支付
+        6. 微信被扫二维码支付
+        7. 微信账户转账（企业付款）
+        8. 关闭订单（未开始支付前关闭订单）
+        9. 订单部分/全部退款
+        10. 查询普通订单（查询退款订单）
+        11. 查询转账（企业付款）订单
 
 ## 相关依赖
 
