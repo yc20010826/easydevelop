@@ -4,8 +4,8 @@
 namespace YangChengEasyComposer\Wechat;
 
 use think\Request;
-use think\facade\Cache;
-use think\facade\Log;
+use think\Cache;
+use think\Log;
 use YangChengEasyComposer\Base;
 
 /**
@@ -49,6 +49,14 @@ class WechatOfficial extends Base
         $this->lodId = empty($config['lodId'])?'':$config['lodId'];
         $this->aesKey = empty($config['aesKey'])?'':$config['aesKey'];
         $this->getAccessToken();
+    }
+
+    /**
+     * 获取微信token
+     * @return mixed|string
+     */
+    public function getToken(){
+        return $this->token;
     }
 
     /**
