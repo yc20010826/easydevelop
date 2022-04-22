@@ -63,6 +63,34 @@ class Entrance extends \YangChengEasyComposer\Base
     }
 
     /**
+     * 获取客服列表
+     * @return mixed
+     * @throws \think\Exception
+     */
+    public function list_contact_way(){
+        $url = '/cgi-bin/kf/account/list';
+        // 参数
+        $pram = [
+            'access_token' => $this->accessToken
+        ];
+        if(!empty($scene)){
+            $pram['scene'] = $scene;
+        }
+        // 发起请求
+        try{
+            $result = YangRequest::send_request($this->apiUrl.$url, $pram,'GET');
+            if (isset($result['errcode']) && $result['errcode'] != 0 || !$result){
+                Log::error('yangchengEasy方法出现错误：'.$result['errmsg']);
+                throw new \think\Exception($result['errmsg']);
+            }
+            return $result['account_list'];
+        }catch (\Exception $e){
+            Log::error('yangchengEasy方法出现错误：'.$e);
+            throw new \think\Exception($e->getMessage());
+        }
+    }
+
+    /**
      * 获取客服链接
      * @param string $open_kfid 客服ID
      * @param string $scene 场景值
