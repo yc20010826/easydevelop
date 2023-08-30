@@ -2,7 +2,7 @@
     "name": "yangcheng0826/easydevelop",
     "description": "YangChengEasyClass(容易开发的类)，这套类库封装了常用的一些方法及类库，例如Office操作、微信公众号、小程序、请求封装、数组操作、微信及支付宝支付、汽车参数配置相关查询等",
     "type": "library",
-    "keywords": ["PHP", "Wechat","WechatPay", "Excel", "微信支付", "支付宝支付", "微信公众号", "微信小程序", "spreadsheet"],
+    "keywords": ["PHP", "Wechat","WechatPay", "Excel", "微信支付", "支付宝支付", "微信公众号", "微信小程序", "spreadsheet","汽车查询","汽车配置"],
     "license": "MIT",
     "authors": [
         {
