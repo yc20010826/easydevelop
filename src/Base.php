@@ -12,6 +12,14 @@ use think\Request;
  */
 class Base extends \think\Controller
 {
+    protected $baseHeader = [
+        'Accept: application/json, text/plain, */*',
+        'Accept-Encoding: gzip, deflate',
+        'Accept-Language: zh-CN,zh;q=0.9',
+        'Content-Type: application/json;charset=UTF-8',
+        'Dos-Requested-With: XMLHttpRequest',
+        'User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36',
+    ];
 
     public function __construct(Request $request = null)
     {
@@ -28,6 +36,11 @@ class Base extends \think\Controller
      * @return bool|string
      */
     protected function http($url, $params, $method = 'GET', $header = array(), $multi = false){
+
+        if(empty($header)){
+            // 采用默认的header
+            $header = $this->baseHeader;
+        }
         $opts = array(
             CURLOPT_TIMEOUT        => 30,
             CURLOPT_RETURNTRANSFER => 1,
